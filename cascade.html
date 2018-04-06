@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade Demo</title>
+    <style>
+        .c1 {
+            color: black;
+        }
+
+        #c1i1 {
+            color: #b3d4fc;
+        }
+
+        .c1 #c1i1 p {
+            color: #4CAF50;
+        }
+
+        p {
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+<div class="c1">
+    <div id="c1i1">
+        <div style="color: red">Noi dung inline</div>
+        <p>Noi dung khong co inline</p>
+    </div>
+</div>
+</body>
+</html>
