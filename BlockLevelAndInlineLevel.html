@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo CSS</title>
+</head>
+<body>
+<h1>Demo Block</h1>
+ <!--default div is block level-->
+ <!--cannot apply vertical-align-->
+<!--always starts on a new line and takes up the full width available-->
+<!--can apply with and height -->
+<!--all margin, padding have impact-->
+<div>
+  <span>Hello Girl!</span> <span>CSS Learning</span>
+</div>
+<div>
+  <span>Hello Girl2!</span> <span>CSS Learning</span>
+</div>
+
+
+<h1>Demo Inline</h1>
+<div style="display: inline; margin-right: 10px; margin-bottom: 10px;">
+  <!--1. always stay in one rows, no start new line-->
+  <!--2. margin-top and margin-bottom no impact only margin left, margin-right have impact-->
+  <!--3. Cannot apply with and height-->
+  <span >Hello Girl!</span> <span>CSS Learning</span>
+</div>
+<div style="display: inline; margin-top: 10px;">
+  <span>Hello Girl2!</span> <span>CSS Learning</span>
+</div>
+
+
+<h1>Demo Inline - block</h1>
+<!--1. always stay in one rows, no start new line-->
+<!--2. all margin, padding have impact-->
+<!--3. can apply vertical-aline -->
+<!--4. can apply with and height -->
+<div style="display: inline-block; margin-bottom: 20px;">
+  <span>Hello Girl!</span> <span>CSS Learning</span>
+</div>
+<div style="display: inline-block;  margin-bottom: 40px; width: 250px; height: 100px;">
+  <span>Hello Girl2!</span> <span>CSS Learning</span>
+</div>
+
+<div style="display: inline-block; vertical-align: bottom;">
+  <span>Hello Girl2!</span> <span>vertical-aline: bottom</span>
+</div>
+
+<div style="display: inline-block; margin-bottom: 10px;">
+  <span>Hello Girl2!</span> <span>CSS Learning</span>
+</div>
+
+
+
+<h1>Demo Inline - flex</h1>
+<div style="display: inline-flex; margin-right: 10px; margin-bottom: 10px;">
+  <!--1. always stay in one rows, no start new line-->
+  <!--2. margin-top and margin-bottom no impact only margin left, margin-right have impact-->
+  <!--3. Cannot apply with and height-->
+  <span >Hello Girl!</span> <span>CSS Learning</span>
+</div>
+<div style="display: inline-flex; margin-top: 10px;">
+  <span>Hello Girl2!</span> <span>CSS Learning</span>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    border: 1px solid red;
+}
+
+/*div:after {*/
+    /*clear: both;*/
+    /*content: ".";*/
+    /*display: block;*/
+    /*height: 0; !* Chieu cao cua thanh phan bang 0 *!*/
+    /*line-height: 0; !* Khoang cach cua dong` bang 0 *!*/
+    /*visibility: hidden; !* Xac dinh thanh phan khong dc nhin thay *!*/
+/*}*/
+
+p.first {
+    background: #f3f3cf;
+    float: left;
+    height: 100px;
+}
+
+p.second {
+    background: #e0e0fc;
+    float: right;
+    height: 100px;
+
+}
+
+p.third {
+    background: #befcc9;
+    height: 100px;
+    /*clear: both;*/
+
+    /*Margin top se khong an khi su dung clear both*/
+    /*margin-top: 20px;*/
+}
