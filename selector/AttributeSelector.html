@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selector Demo</title>
+    <style>
+
+        /*Ket thuc bang 1*/
+        ul li[value$='1'] {
+            color: springgreen;
+        }
+
+        /*Gia tri bang Danh sach 3*/
+        ul li[value='Danh sach 3'] {
+            color: red;
+        }
+
+        /*Bat dau bang Danh*/
+        ul li[value^='Danh'] {
+            color: red;
+        }
+
+        /*Bao gom sach*/
+        ul li[value*='sach'] {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li value="Danh sach 1">Danh sach 1</li>
+    <li value="Danh sach 2">Danh sach 2</li>
+    <li value="Danh sach 3">Danh sach 3</li>
+    <li value="Danh sach 4">Danh sach 4</li>
+    <li value="Danh sach 5">Danh sach 5</li>
+</ul>
+</body>
+</html>

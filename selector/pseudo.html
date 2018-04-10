@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Demo</title>
+    <style>
+        div > p::before {
+            content: "Hello Anh Vuong";
+        }
+
+        div  p::first-line {
+            color: red;
+        }
+
+
+        div > p::selection {
+            color: darkgrey;
+            background-color: yellow;
+            border: 1px solid springgreen;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <p>This CSS3 selector refers to items that a visitor has selected on a page.
+        For example, when a visitor clicks and drags over text,
+        the browser highlights that text, and the visitor can then copy the text.
+        Normally, browsers add a blue background behind the text. Internet Explorer changes the text color to white.
+        However, you can control the background color and text color by defining this selector.
+        For example, if you wanted to make selected text white with a violet background you could add this style to a
+        page’s style sheet:
+    </p>
+</div>
+</body>
+</html>

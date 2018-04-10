@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector Demo</title>
+    <style>
+        div ul :first-child {
+            color: springgreen;
+        }
+
+        ul :last-child {
+            color: yellow;
+        }
+
+        li:nth-child(2n+1) {
+            color: red;
+        }
+
+        /*Trong các thẻ con (cháu) bên trong thẻ ol li, những thẻ nào có một con duy nhất sẽ chạy style*/
+        /*Tuong tu nhu :first-child, last-child va nth-child*/
+        ol li :only-child{
+            color: #999999;
+        }
+
+        /*Trong danh sach cac thẻ con là li, Thẻ li đầu tiên sẽ được chạy style*/
+        /*Tương tự như last-child, nth-child và only child*/
+        li:first-child{
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <p>This CSS3 selector refers to items that a visitor has selected on a page.
+            For example, when a visitor clicks and drags over text,
+            the browser highlights that text, and the visitor can then copy the text.
+            Normally, browsers add a blue background behind the text. Internet Explorer changes the text color to white.
+            However, you can control the background color and text color by defining this selector.
+            For example, if you wanted to make selected text white with a violet background you could add this style to a
+            page’s style sheet:</p>
+        <li>Thẻ li 1</li>
+        <li>Thẻ li</li>
+        <li>Thẻ li 3</li>
+        <p>This CSS3 selector refers to items that a visitor has selected on a page.
+            For example, when a visitor clicks and drags over text,
+            the browser highlights that text, and the visitor can then copy the text.
+            Normally, browsers add a blue background behind the text. Internet Explorer changes the text color to white.
+            However, you can control the background color and text color by defining this selector.
+            For example, if you wanted to make selected text white with a violet background you could add this style to a
+            page’s style sheet:</p>
+    </ul>
+    <ul><span>Thẻ ul 2</span></ul>
+</div>
+<ul>
+    <li>Thẻ li 1</li>
+    <li>Thẻ li 2</li>
+    <li>Thẻ li 3</li>
+    <li>Thẻ li 4</li>
+    <li>Thẻ li 5</li>
+    <li>Thẻ li 6</li>
+</ul>
+<ol>
+    <li>
+        <span>Thẻ li duy nhất</span>
+        <span><strong>Thẻ li duy nhất nằm trong thẻ li</strong></span>
+    </li>
+    <div><strong>fdfsd</strong></div>
+</ol>
+<ul>
+    <li>Thẻ li 7</li>
+    <li>
+        <ol>Thẻ li 9</ol>
+        <ol>Thẻ li 10</ol>
+        <ol>Thẻ li 11</ol>
+    </li>
+</ul>
+</body>
+</html>
